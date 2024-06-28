@@ -25,6 +25,7 @@ h3 {
     border: 1px solid aliceblue;
     padding: 10px;
     margin: 10px;
+    transition: all 0.07s;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -35,5 +36,5 @@ h3 {
 .active {
     color: lightskyblue;
     border: 1px solid lightskyblue;
-    
+    transform: scale(1.1);
 }
