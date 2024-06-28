@@ -2,9 +2,7 @@
 
 ## Todo
 
-- Reset currentTime on audio clips before replaying
 - Refactor event handlers
-- Use `<kbd>` HTML elements in place of `<h3>`
 - Add equivalent mouse event handlers matching the behavior of the keyboard handlers
 
 ## Notes
