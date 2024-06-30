@@ -6,7 +6,6 @@
     <title>CSS and JavaScript Clock</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div id="clock-face">
@@ -17,8 +16,7 @@
         <div id="second-hand">
         </div>
     </div>
-    <input type="number" onkeyup="rotateHandElement('hour-hand', this.value)" placeholder="hour hand degrees">
-    <input type="number" onkeyup="rotateHandElement('minute-hand', this.value)" placeholder="minute hand degrees" />
-    <input type="number" onkeyup="rotateHandElement('second-hand', this.value)" placeholder="second hand degrees" />
+    <span id="digital-span"></span>
+    <script src="script.js"></script>
 </body>
 </html>

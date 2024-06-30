@@ -51,3 +51,9 @@ html {
     top: 0;
     left: 160px;
 }
+
+#digital-span {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
