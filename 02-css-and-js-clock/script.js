@@ -1,3 +1,5 @@
+const UPDATE_INTERVAL_MS = 200;
+
 const hourHand = document.getElementById('hour-hand');
 const minuteHand = document.getElementById('minute-hand');
 const secondHand = document.getElementById('second-hand');
@@ -10,7 +12,7 @@ function runUpdateLoop() {
   setInterval(() => {
     now = new Date();
     update(now);
-  }, 200);
+  }, UPDATE_INTERVAL_MS);
 }
 
 runUpdateLoop();
