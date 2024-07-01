@@ -1,0 +1,42 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(38, 38, 66);
+    color: rgb(242, 245, 245);
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:active {
+    color: lightblue;
+}
+
+label {
+    font-size: 18px;
+}
+
+img {
+    max-width: 360px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
