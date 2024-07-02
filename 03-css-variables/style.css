@@ -1,3 +1,9 @@
+:root {
+    --spacing: 10px;
+    --blur: 10px;
+    --base: #23d783;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     background-color: rgb(38, 38, 66);
@@ -26,11 +32,19 @@ label {
 
 img {
     max-width: 360px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    -webkit-filter: blur(var(--blur));
 }
 
 .container {
     margin: 0 auto;
     max-width: 600px;
+}
+
+.highlight {
+    color: var(--base);
 }
 
 .controls {

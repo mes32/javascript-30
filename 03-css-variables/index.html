@@ -9,19 +9,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Update CSS Variables with JavaScript</h1>
+        <h1>Update CSS Variables with <span class="highlight">JavaScript</span></h1>
         <div class="controls">
             <div>
                 <label for="spacing">Spacing:</label>
-                <input type="range" name="spacing">
+                <input id="spacing" type="range" name="spacing" min="0" max="200" value="10">
             </div>
             <div>
                 <label for="blur">Blur:</label>
-                <input type="range" name="blur">
+                <input id="blur" type="range" name="blur" min="0" max="25" value="10">
             </div>
             <div>
                 <label for="base-color">Base Color:</label>
-                <input type="color" name="base-color">
+                <input id="base-color" type="color" name="base-color" value="#23d783">
             </div>
         </div>
         <figure>
@@ -35,4 +35,5 @@
         </figure>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
