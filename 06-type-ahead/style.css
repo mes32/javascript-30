@@ -1,4 +1,48 @@
 html {
-  background-color: aquamarine;
+  background-color: #0f0f0f;
+  color: #e6e6e6;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  background-color: #1f1f1f;
+  color: #e6e6e6;
+  border: 3px solid #87bffa;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px 6px;
+  width: 20ch;
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  outline: 0 none;
+  border: 3px solid #bcdbfc;
+  width: 30ch;
+}
+
+.search-results-table {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+  margin: 4px 3px;
+  font-size: 12px;
+
+  td {
+    padding: 4px;
+  }
+}
+
+.search-results-table__has-results {
+  display: table;
+}
+
+.matching-portion {
+  font-weight: bold;
+}
+
+.population {
+  font-style: italic;
+  color: #8c8c8c;
+  margin-left: 12px;
+  float: right;
 }
