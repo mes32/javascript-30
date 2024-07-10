@@ -10,3 +10,5 @@ Working thru the exercises from https://github.com/wesbos/JavaScript30/tree/mast
 - 04 - Array Cardio Day 1
 - [05 - Flex Panel Gallery](https://github.com/mes32/javascript-30/tree/main/05-flex-panel-gallery)
 - [06 - Type Ahead](https://github.com/mes32/javascript-30/tree/main/06-type-ahead)
+- 07 - Array Cardio Day 2
+- [08 - Fun with HTML5 Canvas](https://github.com/mes32/javascript-30/tree/main/08-fun-with-html5-canvas)
