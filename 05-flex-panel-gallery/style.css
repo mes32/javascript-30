@@ -14,7 +14,7 @@ html {
 }
 
 .panel {
-  width: 20%;
+  flex: 1;
   background-size: 200% auto;
 
   text-align: center;
@@ -33,7 +33,7 @@ html {
 }
 
 .active {
-  width: 35%;
+  flex: 2;
 
   p {
     margin: 30px 20px;

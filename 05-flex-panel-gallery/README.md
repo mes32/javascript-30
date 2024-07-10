@@ -2,7 +2,6 @@
 
 ## Todo
 
-- Use CSS `flex` attribute to set panel widths instead of `width`
 - Use CSS relative translate to move text out of view instead of negative padding
 - Start the text transition off the end of the panel transition
 
