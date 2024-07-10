@@ -1,10 +1,16 @@
 const panels = document.querySelectorAll(".panel");
 
-console.log(panels);
+function deactivateAllPanels() {
+  panels.forEach((panel) => panel.classList.remove("active"));
+}
 
 panels.forEach((panel) => {
   panel.addEventListener("click", (event) => {
-    panels.forEach((p) => p.classList.remove("active"));
-    event.target.closest(".panel").classList.add("active");
+    const currentPanel = event.target.closest(".panel");
+    const currentActive = currentPanel.classList.contains("active");
+    deactivateAllPanels();
+    if (!currentActive) {
+      currentPanel.classList.add("active");
+    }
   });
 });
