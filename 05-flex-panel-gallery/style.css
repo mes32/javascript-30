@@ -15,34 +15,44 @@ html {
 
 .panel {
   flex: 1;
-  background-size: 200% auto;
 
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: hidden;
 
   transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   p {
-    margin: 400px 20px;
-    padding: 5px;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  p:first-of-type {
+    position: relative;
+    bottom: 300px;
+  }
+
+  p:last-of-type {
+    position: relative;
+    top: 300px;
   }
 }
 
 .active {
   flex: 2;
 
-  p {
-    margin: 30px 20px;
-  }
-
   p:nth-child(even) {
     border-radius: 10px;
     background-color: white;
     color: black;
+  }
+
+  p:first-of-type {
+    bottom: 0;
+  }
+
+  p:last-of-type {
+    top: 0;
   }
 }
 
