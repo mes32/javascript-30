@@ -11,11 +11,15 @@ let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 
+const maxLineWidth = 60;
+const minLineWidth = 20;
+let lineWidthIncreasing = true;
+let lineWidth = 25;
+
 function draw(e) {
   if (isDrawing) {
+    ctx.lineWidth = lineWidth;
 
-    // ctx.lineWidth = 15;
-    // ctx.lineCap = lineCap;
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(e.offsetX, e.offsetY);
@@ -23,6 +27,18 @@ function draw(e) {
 
     lastX = e.offsetX;
     lastY = e.offsetY;
+
+    if (lineWidth >= maxLineWidth) {
+      lineWidthIncreasing = false;
+    } else if (lineWidth <= minLineWidth) {
+      lineWidthIncreasing = true;
+    }
+
+    if (lineWidthIncreasing) {
+      lineWidth++;
+    } else {
+      lineWidth--;
+    }
   }
 }
 
