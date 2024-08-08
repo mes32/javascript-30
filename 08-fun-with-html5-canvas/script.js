@@ -3,7 +3,6 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
-ctx.strokeStyle = "#333333";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 
@@ -16,9 +15,12 @@ const minLineWidth = 20;
 let lineWidthIncreasing = true;
 let lineWidth = 25;
 
+let hue = 0;
+
 function draw(e) {
   if (isDrawing) {
     ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
@@ -39,6 +41,8 @@ function draw(e) {
     } else {
       lineWidth--;
     }
+
+    hue++;
   }
 }
 
