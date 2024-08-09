@@ -27,6 +27,8 @@ function draw(e) {
     ctx.lineTo(e.offsetX, e.offsetY);
     ctx.stroke();
 
+    const strokeDistance =
+      Math.sqrt((e.offsetX - lastX) ** 2 + (e.offsetY - lastY) ** 2) / 10;
     lastX = e.offsetX;
     lastY = e.offsetY;
 
@@ -37,12 +39,15 @@ function draw(e) {
     }
 
     if (lineWidthIncreasing) {
-      lineWidth++;
+      lineWidth += strokeDistance;
     } else {
-      lineWidth--;
+      lineWidth -= strokeDistance;
     }
 
-    hue++;
+    hue += strokeDistance;
+    if (hue >= 360) {
+      hue = 0;
+    }
   }
 }
 
